@@ -1,0 +1,122 @@
+body {
+    background-image: url('background.png');
+    background-repeat: repeat;
+    background-color:aliceblue;
+    background-position: center;
+  }
+
+  header {
+    height: 380px;
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(#9fc4f2ee, #d9ddffee, #e0e3ffee);
+    text-align: center;
+    border-radius: 30px 30px 0 0;
+    border: solid;
+    border-width: 0.5px 0.5px 0 0.5px;
+    border-color: #9fc4f2;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    overflow-y: visible;
+  }
+
+  footer {
+    height: 200px;
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(#e0e3ffee, #d9ddffee, #9fc4f2ee);
+    padding-top: 10%;
+    text-align: center;
+    border-radius: 0 0 30px 30px;
+    border: solid;
+    border-width: 0 0.5px 0.5px 0.5px;
+    border-color: #e0e3ff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    clip-path: polygon(0 65%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .brand-box {
+    left: 1%;
+  }
+
+  .brand {
+    font-size: 20px;
+  }
+
+  .text-box {
+    text-align: center;
+  }
+
+  .heading-primary {
+    color: #183c50;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 30px;
+  }
+
+  .heading-primary-main {
+    display: block;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 5px;
+  }
+
+  .heading-primary-sub {
+    display: block;
+    font-size: small;
+    font-weight: 400;
+    letter-spacing: 7.4px;
+  }
+
+  .btn:link,
+  .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+  }
+
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-white {
+    background-color: #183c50;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .syntax {
+    flex: 1;
+    background-color: #d9ddffee;
+    background-size: cover;
+    text-align: center;
+    padding: 1%;
+    width: 98%;
+    overflow-y: visible;
+    overflow-x: auto;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: 2%;
+    font-size: smaller;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
+
+  }
