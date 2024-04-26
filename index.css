@@ -323,7 +323,10 @@ footer{
   background: floralwhite;
 }
 footer #copyright {
+  background-image: url('sa.png');
   background-color: #343434;
+  background-size:contain;
+  background-repeat: no-repeat;
 }
 
 footer i{
