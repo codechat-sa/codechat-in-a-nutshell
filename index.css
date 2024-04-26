@@ -1,122 +1,348 @@
-body {
-    background-image: url('background.png');
-    background-repeat: repeat;
-    background-color:aliceblue;
-    background-position: center;
-  }
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
-  header {
-    height: 380px;
-    font-family: 'Lato', sans-serif;
-    background-image: linear-gradient(#9fc4f2ee, #d9ddffee, #e0e3ffee);
-    text-align: center;
-    border-radius: 30px 30px 0 0;
-    border: solid;
-    border-width: 0.5px 0.5px 0 0.5px;
-    border-color: #9fc4f2;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
-  }
+.c-pointer {
+  cursor: pointer;
+}
 
-  section {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    overflow-y: visible;
-  }
+.no-scroll{
+  overflow: hidden;
+  background-color: #2f3e4e;
+}
 
-  footer {
-    height: 200px;
-    font-family: 'Lato', sans-serif;
-    background-image: linear-gradient(#e0e3ffee, #d9ddffee, #9fc4f2ee);
-    padding-top: 10%;
-    text-align: center;
-    border-radius: 0 0 30px 30px;
-    border: solid;
-    border-width: 0 0.5px 0.5px 0.5px;
-    border-color: #e0e3ff;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    clip-path: polygon(0 65%, 100% 0, 100% 100%, 0 100%);
-  }
+.fz-2 {
+  font-size: 2em;
+}
+.fz-4 {
+  font-size: 4em;
+}
 
-  .brand-box {
-    left: 1%;
-  }
+.fz-5 {
+  font-size: 5em;
+}
 
-  .brand {
-    font-size: 20px;
-  }
+.h-100 {
+  height: 100vh !important;
+}
 
-  .text-box {
-    text-align: center;
-  }
+.lobster{
+  font-family: lobster, cursive;
+}
+.raleway{
+  font-family: 'Raleway', sans-serif;
+}
 
-  .heading-primary {
-    color: #183c50;
-    text-transform: uppercase;
-    backface-visibility: hidden;
-    margin-bottom: 30px;
-  }
+.ls-5{
+  letter-spacing: 5px;
+}
+.ls-4{
+  letter-spacing: 4px;
+}
 
-  .heading-primary-main {
-    display: block;
-    font-size: 26px;
-    font-weight: 400;
-    letter-spacing: 5px;
-  }
+a:hover {
+  text-decoration: none;
+}
 
-  .heading-primary-sub {
-    display: block;
-    font-size: small;
-    font-weight: 400;
-    letter-spacing: 7.4px;
-  }
+body{
+  overflow-x: hidden;
+  background: floralwhite;
+}
+html{
 
-  .btn:link,
-  .btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-    border-radius: 100px;
-    transition: all .2s;
-    position: relative;
-  }
+  background: floralwhite;
+}
 
-  .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
+#main-warapper.left {
+  left: 20%;
+  background-color: #2f3e4e;
+}
+#main-warapper {
+  padding: 2%;
+  position: absolute;
+  left: 0;
+  transition: all 0.4s;
+  width: 100%;
+  top: 0;
+}
+#image-header {
+  background: floralwhite;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+#image-header .layer {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
 
-  .btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  }
+.readmore{
+  font-size: small;
+}
 
-  .btn-white {
-    background-color: #183c50;
-    color: #fff;
-    font-size: 14px;
-  }
+.container-fluid{
+background: floralwhite;
+}
+.center {
+  display: flex;
+  flex-direction: row; /* Ensures items are laid out in a horizontal line */
+  flex-wrap: wrap; /* Allows cards to wrap onto the next line when space runs out */
+  justify-content: center; /* Centers cards in the container horizontally */
+  align-items: flex-start; /* Aligns items to the start of the cross axis, which is vertical in this case */
+  padding: 10px; /* Adds space inside the container */
+}
 
-  .syntax {
-    flex: 1;
-    background-color: #d9ddffee;
-    background-size: cover;
-    text-align: center;
-    padding: 1%;
-    width: 98%;
-    overflow-y: visible;
-    overflow-x: auto;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    margin-bottom: 2%;
-    font-size: smaller;
-    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
+.card {
+  width: 450px; /* Fixed width for each card */
+  min-height: 250px; /* Minimum height for each card */
+  background: linear-gradient(#f8f8f8, #fff); /* Gradient background */
+  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4); /* Shadow for 3D effect */
+  border-radius: 6px; /* Rounded corners */
+  margin: 10px; /* Space between cards */
+  position: relative; /* Needed for positioning inner elements absolutely */
+  overflow: hidden; /* Hides anything outside the border */
+}
 
-  }
+.card h1 {
+  text-align: center;
+}
+
+.card .additional {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(#dE685E, #EE786E);
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.card.green .additional {
+  background: lightgreen;
+}
+
+.card.blue .additional {
+  background: dodgerblue;
+}
+
+.card.yellow .additional {
+  background: #FCEEB5;
+}
+
+
+.card:hover .additional {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+}
+
+.card .additional .user-card {
+  display: flex;
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+  width: 150px;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.card .additional .user-card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: -2px;
+  height: 80%;
+  border-left: 2px solid rgba(0,0,0,0.025);
+}
+
+.card .additional .user-card .level,
+.card .additional .user-card .points {
+  top: 15%;
+  color: floralwhite;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: bold;
+  background: rgba(0,0,0,0.15);
+  padding: 0.125rem 0.75rem;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.card .additional .user-card .points {
+  top: 85%;
+}
+
+.card .additional .user-card svg {
+  top: 50%;
+}
+
+.card .additional .more-info {
+  width: 300px;
+  float: left;
+  position: absolute;
+  left: 150px;
+  height: 100%;
+}
+
+.card .additional .more-info h1 {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.card.green .additional .more-info h1 {
+  color: #224C36;
+}
+
+.card.blue .additional .more-info h1 {
+  color: lightblue;
+}
+
+.card.yellow .additional .more-info h1 {
+  color: orange;
+}
+.card .additional .coords {
+  margin: 0 1rem;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.card.green .additional .coords {
+  color: #325C46;
+}
+
+.card.blue .additional .coords {
+  color: lightblue;
+}
+
+.card.yellow .additional .coords {
+  color: black;
+}
+
+.card .additional .coords span + span {
+  float: right;
+}
+
+.card .additional .stats {
+  font-size: 2rem;
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  top: auto;
+  color: #fff;
+}
+
+.card.green .additional .stats {
+  color: #325C46;
+}
+
+.card.blue .additional .stats {
+  color: lightblue;
+}
+.card.yellow .additional .stats {
+  color: orange;
+}
+
+.card .additional .stats > div {
+  flex: 1;
+  text-align: center;
+}
+
+.card .additional .stats i {
+  display: block;
+}
+
+.card .additional .stats div.title {
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card .additional .stats div.value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.card .additional .stats div.value.infinity {
+  font-size: 2.5rem;
+}
+
+.card .general {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.card .general .more {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.9em;
+}
+
+
+
+#logo {
+  font-size: 6em;
+}
+#contact-us{
+  background-image: url('http://kapishsolutions.com/wp-content/uploads/2013/10/contact-us-banner.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  height: 230px;
+  position: relative;
+}
+
+#contact-us .layer{
+ 
+  background: floralwhite;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+#contact-us p,#contact-us h2,#contact-us button{
+  z-index: 1;
+}
+footer{
+  background: floralwhite;
+}
+footer #copyright {
+  background-color: #343434;
+}
+
+footer i{
+  font-size: 22px;
+}
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: floralwhite; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: lightcoral; 
+}
+
