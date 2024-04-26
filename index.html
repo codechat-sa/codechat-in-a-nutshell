@@ -1,1041 +1,336 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>CSS Template</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="chats.css">
+  <meta charset="UTF-8">
+
+
+  <title>📑page</title>
+
+  <link rel="stylesheet" href="pagelanding.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+
 
   <script>
-    window.ZeroMdConfig = {
-      prismUrl: [
-        ['https://cdn.jsdelivr.net/gh/PrismJS/prism@1/prism.min.js', 'data-manual'],
-        'https://cdn.jsdelivr.net/gh/PrismJS/prism@1/plugins/autoloader/prism-autoloader.min.js',
-        'https://cdn.jsdelivr.net/gh/PrismJS/prism@1/plugins/toolbar/prism-toolbar.min.js',
-        'https://cdn.jsdelivr.net/gh/PrismJS/prism@1/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js'
-      ],
-      cssUrls: [
-        'https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css@4/github-markdown.min.css',
-        'https://cdn.jsdelivr.net/gh/PrismJS/prism@1/themes/prism.min.css',
-        'https://cdn.jsdelivr.net/gh/PrismJS/prism@1/plugins/toolbar/prism-toolbar.min.css'
-      ]
-    };
+    window.console = window.console || function (t) { };
   </script>
-  <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-  <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [
-          ['$', '$'],
-          ['\\(', '\\)']
-        ]
-      }
-    };
-    addEventListener('zero-md-rendered', () => MathJax.typeset());
-  </script>
-  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/vextab@3.0.6/dist/main.prod.min.js"></script>
-<script type="module" >import { Vex } from "https://cdn.skypack.dev/vexflow@beta/build/esm/entry/vexflow.js";</script>
 
-<script>
-    let script = document.createElement('script');
-    script.src = "https://cdn.jsdelivr.net/npm/mathpix-markdown-it@1.0.40/es5/bundle.js";
-    document.head.append(script);
-  
-    script.onload = function() {
-      const isLoaded = window.loadMathJax();
-      if (isLoaded) {
-        console.log('Styles loaded!')
-      }
-    }
-  </script>
+
 </head>
 
-<body>
-  <header>
-    <div class="brand-box">
-      <span class="brand">
-        <img src="newccloge.png" width="18%">
-      </span>
+<body translate="no" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+
+  <div id="main-warapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="container-fluid">
+          <div class="row justify-content-center align-items-center h-100">
+            <div class="col-md-12" id="image-header">
+              <div class="layer"></div>
+            </div>
+            <div class="col-md-12">
+              <div class="text-center">
+                <h1 data-aos="zoom-in" data-aos-duration="600" id="logo"><span><img src="pageicon.png"
+                      style="width: 10%;" alt=""></span>page</h1>
+                <br>
+
+                <button data-aos="fade-up" data-aos-duration="1000"
+                  class="btn btn-danger text-uppercase aos-init">Register</button>
+                <button data-aos="fade-up" data-aos-duration="1000"
+                  class="btn btn-warning text-uppercase aos-init">Login</button>
+                <button data-aos="fade-up" data-aos-duration="1000"
+                  class="btn btn-success text-uppercase aos-init">Donate</button>
+                <button data-aos="fade-up" data-aos-duration="1000"
+                  class="btn btn-info text-uppercase aos-init">Learn</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container text-secondary raleway">
+          <div class="row pt-5 mt-1 aos-init" data-aos="fade-down" data-aos-duration="1000">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="msgicon.png" style="width: 100px;" alt="">
+                </div>
+                <div class="col-md-8">
+                  <h4 class="text-primary">Instant Messaging</h4>
+                  <p>Revolutionize your communication with our Instant Messaging feature. Seamlessly integrate diverse
+                    content formats like Markdown, MathJax, Mermaid, Vexflow, SMILE, and Shell directly into your
+                    messages.
+                    <span id="Instant" style="display: none;">
+                      Perfect for students and professionals, this feature enhances collaboration through
+                      enriched, interactive chats that support technical diagrams, complex equations, and more,
+                      facilitating clear and effective communication.
+                    </span>
+                    <a class="readmore" href="javascript:void(0)" onclick="readMore('Instant','readMore1')"
+                      id="readMore1">Read
+                      More</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="fms.png" style="width: 100px;" alt="">
+                </div>
+                <div class="col-md-8">
+                  <h4 class="text-primary">File Management System</h4>
+                  <p>Organize, store, and share your documents effortlessly. Our File Management System is tailored for
+                    educational and professional use, allowing seamless assignment submissions and facilitating online
+                    tests.
+                    <span id="File" style="display: none;">
+                      Whether you're a student submitting a project or an educator managing course materials, our
+                      system enhances your document handling experience, ensuring accessibility and security.
+                    </span>
+                    <a class="readmore" href="javascript:void(0)" onclick="readMore('File','readMore2')"
+                      id="readMore2">Read
+                      More</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row pt-5 mt-1 aos-init" data-aos="fade-down" data-aos-duration="1000">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="pms.png" style="width: 100px;" alt="">
+                </div>
+                <div class="col-md-8">
+                  <h4 class="text-primary">Project Management</h4>
+                  <p>Enhance your team's productivity with our Project Management tools. Designed for businesses and
+                    academic groups alike, our platform includes intuitive Kanban boards, task scheduling, and progress
+                    tracking features.
+                    <span id="Project" style="display: none;">
+                      Streamline your projects from conception to completion, foster collaboration, and
+                      achieve your goals with greater efficiency.
+                    </span>
+                    <a class="readmore" href="javascript:void(0)" onclick="readMore('Project','readMore3')"
+                      id="readMore3">Read
+                      More</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="networking.png" style="width: 100px;" alt="">
+                </div>
+                <div class="col-md-8">
+                  <h4 class="text-primary">Networking</h4>
+                  <p>Connect, collaborate, and expand your professional network. Our Networking feature combines the
+                    interactive engagement of a Q&A forum with the professional depth of a career networking site.
+                    <span id="Networking" style="display: none;">
+                      Whether you're seeking answers to pressing questions or opportunities to grow professionally, our
+                      platform fosters meaningful connections and community engagement.
+                    </span>
+                    <a class="readmore" href="javascript:void(0)" onclick="readMore('Networking','readMore4')"
+                      id="readMore4">Read
+                      More</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="text-box">
-      <h1 class="heading-primary">
-        <span class="heading-primary-sub">A markdown instant messaging, learning management system coupled with project management tools for
-          students, educators, and professionals alike.</span>
-      </h1>
-      <!--<a href="#" class="btn btn-white btn-animated">see more here</a>-->
+    <div class="container-fluid aos-init" data-aos="fade-up" data-aos-duration="600">
+      <div class="row row-eq-height align-items-center">
+        <div class="col-md-6 p-5 raleway">
+          <img src="brain.png" alt="">
+        </div>
+        <div class="col-md-6 text-secondary p-5 raleway">
+          <p>
+            Within the digital landscape, the CODE CHAT (Pty) Ltd page app aspires to be a cornerstone in the realms of
+            education and career advancement. At its heart, the app is an ecosystem where instant messaging transcends
+            the norm, fostering a dynamic space for learners and educators. Through its innovative Instant Messaging
+            feature, students can effortlessly exchange complex mathematical equations or intricate coding snippets,
+            fostering an interactive and in-depth learning experience. Educators can utilize this tool to deliver
+            feedback, share educational content in rich formats, and facilitate real-time discussions, thus bridging the
+            communication gap in virtual classrooms.
+            <br><br>
+            In terms of career development, page embodies the spirit of professional growth and networking. It serves as
+            a nexus for industry experts, job seekers, and thought leaders to connect and engage in meaningful dialogue.
+            The Networking feature cultivates a robust community, encouraging users to explore career opportunities,
+            mentorship, and peer-to-peer learning. By integrating a Q&A forum within this networking milieu, the
+            platform assures that every inquiry is an avenue for growth and every interaction a potential career
+            catalyst. Thus, CODE CHAT (Pty) Ltd positions itself as an invaluable ally in the pursuit of academic
+            excellence and career success.</p>
+        </div>
+      </div>
     </div>
-  </header>
+    <h2 data-aos="zoom-in" data-aos-duration="600" class="mb-0 mt-5 w-100 text-center text-uppercase raleway aos-init">
+      Pricing</h2>
 
-  <section id="chats">
-      <div class="msg_cc"><div style="flex-direction: column;">
-        <div class="text">
-          <zero-md id="welcome" no-shadow manual-render>
-            <script id="syntax_doc" type="text/markdown" data-dedent>
-  <center>
-  
-  ### Want to learn some texting syntax?
-  <details>
-  <summary style="color:purple">Have a look here</summary>
-  
-  ---
-  
-  <details>
-  <summary>Markdown Syntax</summary>
-  
-  <div style="  text-align: left;">
-  
-  1. Making *Italic* text
-  
-  ```md
-  ✅  correct
-  Making *Italic* text
-  Making _Italic_ text
-  
-  ❌  incorrect
-  Making*Italic*text
-  Making_Italic_text
-  ```
-  
-  2. Making **Bold** text
-  
-  ```md
-  ✅  correct
-  Making **Italic** text
-  Making __Italic__ text
-  
-  ❌  incorrect
-  Making**Italic**text
-  Making__Italic__text
-  ```
-  
-  3. Making ***Italic & Bold*** text
-  
-  ```md
-  ✅  correct
-  Making ***Italic*** text
-  Making ___Italic___ text
-  
-  ❌  incorrect
-  Making***Italic***text
-  Making___Italic___text
-  ```
-  
-  4. >Placing text in block quotes,
-  >>and nested block quotes
-  
-  ```md
-  1 ✅  correct
-  >text here...
-  more text...
-  >>nested text here...
-  more nested text...
-  >
-  text out of nested block qoute...
-  
-  enter twice to exit block qoute..
-  
-  2 ✅  correct
-  >
-  text here...
-  more text...
-  >>
-  nested text here...
-  more nested text...
-  >
-  text out of nested block qoute...
-  
-  enter twice to exit block qoute..
-  ```
-  
-  5. Making bullet points
-  - text here...
-  - text here...<br>
-  more text here...
-  - text here...<br>
-  more text here...
-  - text here...
-    - text here...
-        - text here...<br>
-  - text here...
-  - text here...
-  
-  
-  ```md
-  ✅  correct
-  - you can use Hyphens '-'
-  - text here...
-  more text here...
-  * alternatively use Asterisks '*'
-  more text here...
-  * leave 2 spaces for sub bullets
-  - leave 4 spaces for sub of sub bullets
-    * leave 6 spaces
-  - text here...
-  * text here...
-  
-  ❌  incorrect
-  -you can use Hyphens '-'
-  *alternatively use Asterisks '*'
-  * leave 1 spaces for sub bullets
-  * leave 3 spaces for sub of sub bullets
-  ```
-  
-  6. Making List
-  1) text here...
-  1) text here...
-  1. text here...<br>
-  more text...
-  1. text here...
-    1. text here...
-    1. text here...
-        1. text here...
-  1. text here...
-  1) text here...
-  
-  ```md
-  1 ✅  correct
-  1. you can use '1.' for a new list
-  1. text here...
-  1) alternatively use '1)' for a new list
-  more text...
-  1) leave 3 spaces for sub list
-    1. leave 6 spaces for sub for sub list
-    1. text here...
-        1. leave 9 spaces
-  1) text here...
-  1. text here...
-  
-  ❌  incorrect
-  1.you can use '1.' for a new list
-  1)alternatively use '1)' for a new list
-  1. leave 1 spaces for sub list
-  1. leave 2 spaces for sub of sub list
-  ```
-  
-  </div>
-  
-  #### Powered by [Markdown](https://www.markdownguide.org/basic-syntax/)
-  
-  ---
-  
-  </details>
-  <details>
-  <summary>MathJax Mathematics Syntax</summary>
-  
-  <div style="  text-align: left;">
-  
-  1. Basic Syntax
-  
-  |Syntax|Output|
-  |-|-|
-  | `$$ \left( \sqrt{ \frac{x}{y} } \right) $$ `| $$\left( \sqrt{ \frac{x}{y} } \right) $$ |
-  |`$$ ax^2 + bx + c = 0$$`| $$ ax^2 + bx + c = 0 $$|
-  |`$$ x = \frac{-b \pm \sqrt{b^2-4ac}}{2a} $$`| $$x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$|
-  |`$$ e^x=\lim_{n\to\infty} \left( 1+\frac{x}{n} \right)^n $$`|$$ e^x=\lim_{n\to\infty} \left( 1+\frac{x}{n} \right)^n$$|
-  |`$$ \int_{a}^{b} x^2 \,dx $$`|$$\int_{a}^{b} x^2 \ dx $$|
-  |`$$ \sum_{n=1}^\infty \frac{1}{n^2} $$`|$$ \sum_{n=1}^\infty \frac{1}{n^2} $$|
-  |`$$ \vec{u} + \vec{v} = \vec{w} $$`|$$ \vec{u} + \vec{v} = \vec{w} $$|
-  
-  2. Piecewise functions
-  
-  $$
-  f(n) =
-  \begin{cases}
-  3n+1  & \iff \textit{n is odd} \\\\
-  \dfrac{n}{2} &  \iff \textit{n is even}
-  \end{cases}
-  $$
-  
-  ```latex
-  $$
-  f(n) =
-  \begin{cases}
-  3n+1 & \iff \textit{n is odd} \\\\
-  \dfrac{n}{2} & \iff \textit{n is even}
-  \end{cases}
-  $$
-  ```
-  
-  3. Array
-  
-  $$
-  \begin{array}{c|lcr}
-  n & \text{Left} & \text{Center} & \text{Right} \\\\
-  \hline
-  1 & 1 & 1 & 1 \\\\
-  2 & 10 & 100 & 10 \\\\
-  3 & 100 & 1000 & 100
-  \end{array}
-  $$
-  
-  ```latex
-  $$
-  \begin{array}{c|lcr}
-  n & \text{Left} & \text{Center} & \text{Right} \\\\
-  \hline
-  1 & 1 & 1 & 1 \\\\
-  2 & 10 & 100 & 10 \\\\
-  3 & 100 & 1000 & 100
-  \end{array}
-  $$
-  ```
-  
-  4. Matrices
-  
-  $$
-  \begin{pmatrix}
-  1 & 2 \\\\
-  3 & 4 \\\\
-  \end{pmatrix},
-  \begin{bmatrix}
-  1 & 2 \\\\
-  3 & 4 \\\\
-  \end{bmatrix},
-  \begin{Bmatrix}
-  1 & 2 \\\\
-  3 & 4 \\\\
-  \end{Bmatrix},
-  \left[
-  \begin{array}{cc|c}
-  1 & 2 & 3 \\\\
-  4 & 5 & 6 \\\\
-  \end{array}
-  \right]
-  $$
-  
-  ```latex
-  $$
-  \begin{pmatrix}
-  1 & 2 \\\\
-  3 & 4 \\\\
-  \end{pmatrix},
-  \begin{bmatrix}
-  1 & 2 \\\\
-  3 & 4 \\\\
-  \end{bmatrix},
-  \begin{Bmatrix}
-  1 & 2 \\\\
-  3 & 4 \\\\
-  \end{Bmatrix},
-  \left[
-  \begin{array}{cc|c}
-  1 & 2 & 3 \\\\
-  4 & 5 & 6 \\\\
-  \end{array}
-  \right]
-  $$
-  ```
-  
-  </div>
-  
-  #### Powered by [MathJax](https://www.sqlpac.com/en/documents/mathjax-tex-practical-handbook-quick-reference.html)
-  
-  ---
-  
-  </details>
-  <details>
-  <summary>Shell Operator Syntax</summary>
-  
-  ### ⚠️Each line or block of code in shell operator must end with a <span style="color:red">$</span> dollar sign!
-  
-  <div style="  text-align: left;">
-  
-  1. Basic arithmetic
-  
-  📥 Input
-  ```md
-  ```<br>shell
-  47+27$
-  331*127$
-  125-642$
-  1243/21$
-  25%12$
-  3**2$
-  (253-121)/3$
-  (2+53)*(46-23)$
-  ((32%4)**(3))+5$
-  ```<br>
-  ```
-  
-  📤 Output
-  ```shell
-  47+27$
-  331*127$
-  125-642$
-  1243/21$
-  25%12$
-  3**2$
-  (253-121)/3$
-  (2+53)*(46-23)$
-  ((32%4)**(3))+5$
-  ```
-  
-  2. Functions
-  
-  📥 Input
-  ```md
-  ```<br>shell
-  // Trigonometric functions$
-  sin(3)$
-  cos(4)$
-  tan(0.5)$
-  
-  asin(0.5)$
-  acos(0.5)$
-  atan(2)$
-  
-  // atan2 takes two parameters (y, x)$
-  atan2(1, 2)$
-  
-  // Hyperbolic functions$
-  sinh(1)$
-  cosh(1)$
-  tanh(1)$
-  
-  // Exponential and logarithmic functions$
-  exp(2)$
-  log(10)$
-  log2(8)$
-  log10(100)$
-  
-  // Power and root functions$
-  pow(2, 3)$
-  sqrt(25)$
-  cbrt(8)$
-  
-  // Rounding functions$
-  ceil(3.14)$
-  trunc(8.75)$
-  floor(5.99)$
-  round(6.49)$
-  
-  // Hypotenuse of a right-angled triangle with sides 3 and 4$
-  hypot(3, 4)$
-  
-  // Absolute value$
-  abs(-7)$
-  
-  // Minimum and maximum$
-  min(2, 7, 5)$
-  max(2, 7, 5)$
-  
-  // Random number between 0 (inclusive) and 1 (exclusive)$
-  random()$
-  ```<br>
-  ```
-  
-  📤 Output
-  ```shell
-  // Trigonometric functions$
-  sin(3)$
-  cos(4)$
-  tan(0.5)$
-  
-  asin(0.5)$
-  acos(0.5)$
-  atan(2)$
-  
-  // atan2 takes two parameters (y, x)$
-  atan2(1, 2)$
-  
-  // Hyperbolic functions$
-  sinh(1)$
-  cosh(1)$
-  tanh(1)$
-  
-  // Exponential and logarithmic functions$
-  exp(2)$
-  log(10)$
-  log2(8)$
-  log10(100)$
-  
-  // Power and root functions$
-  pow(2, 3)$
-  sqrt(25)$
-  cbrt(8)$
-  
-  // Rounding functions$
-  ceil(3.14)$
-  trunc(8.75)$
-  floor(5.99)$
-  round(6.49)$
-  
-  // Hypotenuse of a right-angled triangle with sides 3 and 4$
-  hypot(3, 4)$
-  
-  // Absolute value$
-  abs(-7)$
-  
-  // Minimum and maximum$
-  min(2, 7, 5)$
-  max(2, 7, 5)$
-  
-  // Random number between 0 (inclusive) and 1 (exclusive)$
-  random()$
-  ```
-  
-  3. Constants
-  
-  📥 Input
-  ```md
-  ```<br>shell
-  // Mathematical constants$
-  PI$
-  E$
-  SQRT2$
-  SQRT1_2$
-  LN2$
-  LN10$
-  LOG2E$
-  LOG10E$
-  ```<br>
-  ```
-  
-  📤 Output
-  ```shell
-  // Mathematical constants$
-  PI$
-  E$
-  SQRT2$
-  SQRT1_2$
-  LN2$
-  LN10$
-  LOG2E$
-  LOG10E$
-  ```
-  
-  4. Variables & Conditions
-  
-  📥 Input
-  ```md
-  ```<br>shell
-  // Variables$
-  a=random()*100$
-  b=random()*100$
-  c=a-b$
-  //Conditions$
-  a>b ? 'YES' : 'NO'$
-  c_new=c>0 ? c : abs(c)$
-  ```<br>
-  ```
-  
-  📤 Output
-  ```shell
-  // Variables$
-  a=random()*100$
-  b=random()*100$
-  c=a-b$
-  //Conditions$
-  a>b ? 'YES' : 'NO'$
-  c_new=c>0 ? c : abs(c)$
-  ```
-  
-  <div>
-  
-  </details>
-  <details>
-  <summary>Mermaid Diagram Syntax</summary>
-  
-  <div style="  text-align: left;">
-  
-  1. Flowchart
-  
-  ```mermaid
-  flowchart LR
-  subgraph subgraph1
-  direction TB
-  top1[top] --> bottom1[bottom]
-  end
-  subgraph subgraph2
-  direction TB
-  top2[top] --> bottom2[bottom]
-  end
-  
-  outside --> subgraph1
-  outside ---> subgraph2
-  ```
-  
-  ```md
-  ```mermaid
-  flowchart LR
-  subgraph subgraph1
-  direction TB
-  top1[top] --> bottom1[bottom]
-  end
-  subgraph subgraph2
-  direction TB
-  top2[top] --> bottom2[bottom]
-  end
-  
-  outside --> subgraph1
-  outside ---> subgraph2
-  <br>```
-  ```
-  
-  2. Sequence Diagram
-  
-  ```mermaid
-  sequenceDiagram
-  Alice->>Bob: Hello Bob, how are you ?
-  Bob->>Alice: Fine, thank you. And you?
-  create participant Carl
-  Alice->>Carl: Hi Carl!
-  create actor D as Donald
-  Carl->>D: Hi!
-  destroy Carl
-  Alice-xCarl: We are too many
-  destroy Bob
-  Bob->>Alice: I agree
-  ```
-  
-  ```md
-  ```mermaid
-  sequenceDiagram
-  Alice->>Bob: Hello Bob, how are you ?
-  Bob->>Alice: Fine, thank you. And you?
-  create participant Carl
-  Alice->>Carl: Hi Carl!
-  create actor D as Donald
-  Carl->>D: Hi!
-  destroy Carl
-  Alice-xCarl: We are too many
-  destroy Bob
-  Bob->>Alice: I agree
-  <br>```
-  ```
-  
-  3. Pie Chart
-  
-  ```mermaid
-  pie showData
-  title Key elements in Product X
-  "Calcium" : 42.96
-  "Potassium" : 50.05
-  "Magnesium" : 10.01
-  "Iron" : 5
-  ```
-  
-  ```md
-  ```mermaid
-  pie showData
-  title Key elements in Product X
-  "Calcium" : 42.96
-  "Potassium" : 50.05
-  "Magnesium" : 10.01
-  "Iron" : 5
-  <br>```
-  ```
-  
-  4. Mindmap
-  
-  ```mermaid
-  mindmap
-  root((mindmap))
-  Origins
-  Long history
-  ::icon(fa fa-book)
-  Popularisation
-  British popular psychology author Tony Buzan
-  Research
-  On effectiveness<br/>and features
-  On Automatic creation
-  Uses
-  Creative techniques
-  Strategic planning
-  Argument mapping
-  Tools
-  Pen and paper
-  Mermaid
-  ```
-  
-  ```md
-  ```mermaid
-  mindmap
-  root((mindmap))
-  Origins
-  Long history
-  ::icon(fa fa-book)
-  Popularisation
-  British popular psychology author Tony Buzan
-  Research
-  On effectiveness<br/>and features
-  On Automatic creation
-  Uses
-  Creative techniques
-  Strategic planning
-  Argument mapping
-  Tools
-  Pen and paper
-  Mermaid
-  <br>```
-  ```
-  
-  </div>
-  
-  #### Powered by [Mermaid](https://mermaid.js.org/config/Tutorials.html)
-  
-  ---
-  
-  </details>
-  <details>
-  <summary>SMILES Chemical Syntax</summary>
-  
-  <div style="  text-align: left;">
-  
-  1. Pilocarpine
-  
-  ```smiles
-  CCC1C(=O)OCC1Cc1cncn1C
-  ```
-  
-  ```md
-  ```<br>smiles
-  CCC1C(=O)OCC1Cc1cncn1C
-  ```<br>
-  ```
-  
-  2. Bergenin (cuscutin, a resin) ($C_{14}H_{16}O_9$)
-  
-  ```smiles
-  OC[C@@H](O1)[C@@H](O)[C@H](O)[C@@H]2[C@@H]1c3c(O)c(OC)c(O)cc3C(=O)O2
-  ```
-  
-  ```md
-  ```<br>smiles
-  OC[C@@H](O1)[C@@H](O)[C@H](O)
-  [C@@H]2[C@@H]1c3c(O)c(OC)c(O)cc3C(=O)O2
-  ```<br>
-  ```
-  
-  3. Nicotine ($C_{10}H_{14}N_2$)
-  
-  ```smiles
-  CN1CCC[C@H]1c2cccnc2
-  ```
-  
-  ```md
-  ```<br>smiles
-  CN1CCC[C@H]1c2cccnc2
-  ```<br>
-  ```
-  
-  </div>
-  
-  #### Powered by [SMILES](https://www.cheminfo.org/Chemistry/Cheminformatics/Smiles/index.html)
-  
-  ---
-  
-  </details>
-  <details>
-  <summary>Vexflow Musical Note Syntax</summary>
-  
-  <div style="  text-align: left;">
-  
-  1. The Stave
-  
-  ```vexflow
-  tabstave
-  ```
-  
-  ```md
-  ```<br>vexflow
-  tabstave
-  ```<br>
-  ```
-  
-  2. Add some notes
-  
-  ```vexflow
-  tabstave notation=true tablature=false
-  notes Cn-D-E/4 F#/5
-  ```
-  
-  ```md
-  ```<br>vexflow
-  tabstave notation=true tablature=false
-  notes Cn-D-E/4 F#/5
-  ```<br>
-  ```
-  
-  3. Stave keywords
-  
-  ```vexflow
-  tabstave notation=true
-  notes 4-5-6/3 10/4
-  ```
-  
-  ```md
-  ```<br>vexflow
-  tabstave notation=true
-  notes 4-5-6/3 10/4
-  ```<br>
-  ```
-  
-  4. Add durations and tuplets
-  
-  ```vexflow
-  tabstave notation=true
-  notes :q (8/2.7b9b7/3) (5b6/2.5b6/3)v :8 7s12/4
-  notes t:16:9s:8:3s:16:0/4
-  ```
-  
-  ```md
-  ```<br>vexflow
-  tabstave notation=true
-  notes :q (8/2.7b9b7/3) (5b6/2.5b6/3)v :8 7s12/4
-  notes t:16:9s:8:3s:16:0/4
-  ```<br>
-  ```
-  
-  </div>
-  
-  #### Powered by [Vexflow](https://www.vexflow.com/vextab/tutorial.html)
-  
-  ---
-  
-  </details>
-  <details>
-  <summary>HTML, CSS, & JS Syntax</summary>
-  
-  <div style="  text-align: left;">
-  
-  1. JS support only in HTML attributes
-  
-  <div>
-  <input id="input" placeholder="Enter you name here "></input>
-  <button class="btn" type="button" onclick="
-  alert('looking good '+document.getElementById('input').value); 
-  document.getElementById('input').value=''
-  ">Press</button>
-  </div>
-  <style>
-  #input{
-  background-color: #00ff0077;
-  border-radius: 15px;
-  }
-  .btn{
-  padding: 5px;
-  background-color: green;
-  color:white;
-  border-radius: 15px;
-  }
-  </style>
-  
-  ```html
-  <style>
-  <div>
-  <input id="input" placeholder="Enter you name here "></input>
-  <button class="btn" type="button" onclick="
-  alert('looking good '+document.getElementById('input').value); 
-  document.getElementById('input').value=''
-  ">Submit</button>
-  </div>
-  <style>
-  #input{
-  background-color: #00ff0077;
-  border-radius: 15px;
-  }
-  .btn{
-  padding: 5px;
-  background-color: green;
-  color:white;
-  border-radius: 15px;
-  }
-  </style>
-  ```
-  
-  2. Embedding online PDFs, websites, images, and videos
-  
-  <embed src="https://codechat.co.za/rcube.html" width=400 height=400>
-  
-  ```html
-  <style>
-  <embed src="https://codechat.co.za/rcube.html" width=400 height=400>
-  </style>
-  ```
-  
-  </div>
-  
-  </div>
-  
-  </details>
-  
-  #### [CΘDΣ CHΔT](https://codechat.z35.web.core.windows.net/) syntax rendered by [\<zero-md\>](https://zerodevx.github.io/zero-md/)
-  
-  </details>
-  
-  </center>
-            </script>
-    </zero-md>
-  </div>
-  </div></div>
-  <div class="msg_receiver"><div style="flex-direction: column;">
-  <div class="replay"></div>
-  <hr>
-  <div class="text">Hello, how are you doing today?</div>
-  <div id="1" class="msgbutton-row">
-    <button class="msgbutton"><i class="fa fa-mail-reply"></i></button>
-    <button class="msgbutton"><i class="fa fa-info-circle"></i></button>
-    <button class="msgbutton" onclick="toggleDisplay('9')"><i class="fa fa-trash-o"></i></button>
-    <button class="msgbutton"><i class="	fa fa-share-alt"></i></button>
-    <button class="msgbutton" onclick="toggleDisplay('5')" ><i class="fa fa-smile-o"></i></button>
-  </div>
-  <div id="5" class="msgbutton-row">
-    <button class="msgbutton">👍️</button>
-    <button class="msgbutton">❤️</button>
-    <button class="msgbutton">😂</button>
-    <button class="msgbutton">🙏</i></button>
-    <button class="msgbutton">🥳</button>
-    <button class="msgbutton"><i class="fa fa-plus"></i></button>
-  </div>
-  <div id="9" class="msgbutton-row">
-    <button class="msgbutton"><span style="color: red;">Yes <i class="fa fa-trash-o"></i> text</span></button>
-    <button class="msgbutton">Select more</button>
-    <button class="msgbutton" onclick="clsElements()"><span style="color: green;">Cancel</span></button>
-  </div>
-  <span class="span_user_msg_receiver">✓✓</span>
-  <span class="span_date_msg_receiver" onclick="toggleDisplay('1')">Mon 22 Jan 2024 19:48:23</span>
-  </div></div>
-  <div class="msg_receiver"><div style="flex-direction: column;">
-  <span class="span_user_msg_sender"><img class="circular-img" src="https://a.storyblok.com/f/191576/1200x800/faa88c639f/round_profil_picture_before_.webp"> Tumi Louw </span>
-  <span class="span_user_msg_receiver">3 contacts <i class="fa fa-tag">Tagged</i></span><br>
-  <div class="replay"></div>
-  <hr>
-  <div class="text">Have you gents seen that new movie everyone's talking about? I want us to go watch it on <h3>
-      Friday</h3> are to guys down for that?</div>
-  <div id="2" class="msgbutton-row">
-    <button class="msgbutton"><i class="fa fa-mail-reply-all"></i></button>
-    <button class="msgbutton"><i class="fa fa-mail-reply"></i></button>
-    <button class="msgbutton" onclick="toggleDisplay('14')"><i class="fa fa-info-circle"></i></button>
-    <button class="msgbutton" onclick="toggleDisplay('10')"><i class="fa fa-trash-o"></i></button>
-    <button class="msgbutton" onclick="toggleDisplay('13')"><i class="	fa fa-share-alt"></i></button>
-    <button class="msgbutton" onclick="toggleDisplay('6')" ><i class="fa fa-smile-o"></i></button>
-  </div>
-  <div id="6" class="msgbutton-row">
-    <button class="msgbutton">👍️</button>
-    <button class="msgbutton">❤️</button>
-    <button class="msgbutton">😂</button>
-    <button class="msgbutton">🙏</i></button>
-    <button class="msgbutton">🥳</button>
-    <button class="msgbutton"><i class="fa fa-plus"></i></button>
-  </div>
-  <div id="10" class="msgbutton-row">
-    <button class="msgbutton"><span style="color: red;">Yes <i class="fa fa-trash-o"></i> text</span></button>
-    <button class="msgbutton">Select more</button>
-    <button class="msgbutton" onclick="clsElements()"><span style="color: green;">Cancel</span></button>
-  </div>
-  <div id="13" class="msgbutton-row">
-    <button class="msgbutton"><i class="fa fa-clone"></i></button>
-    <button class="msgbutton">Select more</button>
-    <button class="msgbutton"><i class="fa fa-mail-forward"></i></button>
-  </div>
-  <div id="14" class="msginfolist-column">
-  <div class="msginfolist"><i class="fa fa-info-circle">Text information</i></div>
-  <div class="msginfolist">✓○<span class="span_user_msg_receiver">Mon 22 Jan 2024 19:53:15</span></div>
-  <div class="msginfolist">●✓<span class="span_user_msg_receiver">Mon 22 Jan 2024 19:53:15</span></div>
-  <div class="msginfolist">✓✓<span class="span_user_msg_receiver">~</span></div>
-  <div class="msginfolist"><i class="fa fa-tag">Tagged contact list</i></div>
-  <div class="msginfolist"><img class="circular-img" src="https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg"><span class="span_user_msg_receiver">Yourself</span></div>
-  <div class="msginfolist"><img class="circular-img" src="https://expertphotography.b-cdn.net/wp-content/uploads/2020/08/profile-photos-4.jpg"><span class="span_user_msg_receiver">Mohlomi Cliff Makhetha</span></div>
-  <div class="msginfolist"><img class="circular-img" src="https://a.storyblok.com/f/191576/1200x800/faa88c639f/round_profil_picture_before_.webp"><span class="span_user_msg_receiver">Tumi Louw</span></div>
-  </div>
-  <span class="span_user_msg_receiver">●✓</span>
-  <span class="span_date_msg_receiver" onclick="toggleDisplay('2')">Mon 22 Jan 2024 19:53:15</span>
-  </div></div>
-  <div class="msg_sender"><div style="flex-direction: column;">
-  <div class="replay"></div>
-  <hr>
-  <div class="text">Hey Tumi! I'm doing well, thanks. How about you?</div>
-  <div id="3" class="msgbutton-row">
-    <button class="msgbutton"><i class="fa fa-mail-reply"></i></button>
-    <button class="msgbutton"><i class="fa fa-info-circle"></i></button>
-    <button class="msgbutton" onclick="toggleDisplay('11')"><i class="fa fa-trash-o"></i></button>
-    <button class="msgbutton"><i class="fa fa-pencil"></i></button>
-    <button class="msgbutton"><i class="	fa fa-share-alt"></i></button>
-    <button class="msgbutton" onclick="toggleDisplay('7')" ><i class="fa fa-smile-o"></i></button>
-  </div>
-  <div id="7" class="msgbutton-row">
-    <button class="msgbutton">👍️</button>
-    <button class="msgbutton">❤️</button>
-    <button class="msgbutton">😂</button>
-    <button class="msgbutton">🙏</i></button>
-    <button class="msgbutton">🥳</button>
-    <button class="msgbutton"><i class="fa fa-plus"></i></button>
-  </div>
-  <div id="11" class="msgbutton-row">
-    <button class="msgbutton"><span style="color: red;">Yes <i class="fa fa-trash-o"></i> text</span></button>
-    <button class="msgbutton">Select more</button>
-    <button class="msgbutton" onclick="clsElements()"><span style="color: green;">Cancel</span></button>
-  </div>
-  <span class="span_user_msg_sender">✓○</span>
-  <span class="span_date_msg_sender" onclick="toggleDisplay('3')">Mon 22 Jan 2024 20:08:01</span>
-  </div></div>
-  <div class="msg_sender"><div style="flex-direction: column;">
-  <span class="span_user_msg_sender">3 contacts <i class="fa fa-tag">Tagged</i></span><br>
-  <div class="replay">
-    <div class="msg_receiver">
-      <div class="text">Have you gents seen that new movie everyone's talking about? I want us to go watch it on
-        <h3>Friday</h3> are to guys down for that?</div>
+    <div data-aos="zoom-in" data-aos-duration="600" class="center">
+      <div class="card">
+        <div class="additional">
+          <div class="user-card">
+            <img class="center" src="https://cdn-icons-png.flaticon.com/512/4729/4729436.png" style="width:80%"></img>
+          </div>
+          <div class="more-info">
+            <h1>Educational Licensing</h1>
+            <h1>user cost/month</h1>
+            <div class="stats">
+              <div>
+                <div class="title">Student</div>
+                <i class="fas fa-user-graduate"></i>
+                <div class="value">R0 - 80</div>
+              </div>
+              <div>
+                <div class="title">Educator</div>
+                <i class="fas fa-chalkboard-teacher"></i>
+                <div class="value">R150</div>
+              </div>
+              <div>
+                <div class="title">Staff</div>
+                <i class="fas fa-users"></i>
+                <div class="value">R100</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="general">
+          <h2>Educational Licensing</h2>
+          <p>This model allows educational institutions to tailor their usage and expenses. It provides flexibility and
+            scalability, ensuring that schools only pay for the number of users actively using the platform</p>
+        </div>
+      </div>
+
+      <div class="card yellow">
+        <div class="additional">
+          <div class="user-card">
+            <img class="center" src="https://cdn-icons-png.flaticon.com/512/10165/10165059.png" style="width:80%"></img>
+          </div>
+          <div class="more-info">
+            <h1>Business Licensing</h1>
+            <h1>user cost/month</h1>
+            <div class="stats">
+              <div>
+                <div class="title">client</div>
+                <i class="fas fa-user-alt"></i>
+                <div class="value">R0 - 100</div>
+              </div>
+              <div>
+                <div class="title">Staff</div>
+                <i class="fas fa-users"></i>
+                <div class="value">R20 - 100</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="general">
+          <h2>Business Licensing</h2>
+          <p>This model enables businesses to control costs by paying only for the number of users utilizing the
+            platform. It offers a scalable solution that can adapt to the changing needs of the organization as it grows
+            or downsizes</p>
+        </div>
+      </div>
+      <div class="card green">
+        <div class="additional">
+          <div class="user-card">
+            <img class="center" src="https://cdn0.iconfinder.com/data/icons/linkedin-ui-colored/48/JD-07-512.png"
+              style="width:100%"></img>
+          </div>
+          <div class="more-info">
+            <h1>Free User Model</h1>
+            <h1>user cost/month</h1>
+            <div class="stats">
+              <div>
+                <div class="title">plug-in</div>
+                <i class="fa fa-plug"></i>
+                <div class="value">R0 - 50</div>
+              </div>
+              <div>
+                <div class="title">storage</div>
+                <i class="fa fa-database"></i>
+                <div class="value">R10/2Gb extra</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="general">
+          <h2>Free User Model</h2>
+          <p>The free personal use model offers flexibility and affordability for individuals. Users can choose to
+            upgrade to premium features as needed, ensuring that they only pay for the functionalities they use with 1Gb
+            free file management system.</p>
+        </div>
+      </div>
+      <div class="card blue">
+        <div class="additional">
+          <div class="user-card">
+            <img class="center" src="https://icon-library.com/images/open-source-icon/open-source-icon-14.jpg"
+              style="width:100%"></img>
+          </div>
+          <div class="more-info">
+            <h1>Open Source Licensing</h1>
+            <h1>user cost/month</h1>
+            <div class="stats">
+              <div>
+                <div class="title">plug-in</div>
+                <i class="fa fa-plug"></i>
+                <div class="value">R0 - R50</div>
+              </div>
+              <div>
+                <div class="title">no storage</div>
+                <i class="fa fa-database"></i>
+                <div class="value">0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="general">
+          <h2>Open Source</h2>
+          <p>Our Open Source Licensing model is crafted for developers, innovators, and technologists eager to use our
+            platform's capabilities in their projects at no cost. This model promotes community collaboration, enhancing
+            and expanding the platform's functionality.</p>
+        </div>
+      </div>
+
     </div>
-  </div>
-  <hr>
-  <div class="text">
-    <strong>Awesome!</strong>
-    <p style="color:red">Can we plan for next weekend as i am not in CPT</p>
-    <p style="color:green">will back next week wednesday from JHB, can't wait to see you peeps. miss you all talk
-      later</p>
-  </div>
-  <div id="4" class="msgbutton-row">
-    <button class="msgbutton"><i class="fa fa-mail-reply-all"></i></button>
-    <button class="msgbutton"><i class="fa fa-mail-reply"></i></button>
-    <button class="msgbutton"><i class="fa fa-info-circle"></i></button>
-    <button class="msgbutton" onclick="toggleDisplay('12')"><i class="fa fa-trash-o"></i></button>
-    <button class="msgbutton"><i class="fa fa-pencil"></i></button>
-    <button class="msgbutton"><i class="	fa fa-share-alt"></i></button>
-    <button class="msgbutton" onclick="toggleDisplay('8')" ><i class="fa fa-smile-o"></i></button>
-  </div>
-  <div id="8" class="msgbutton-row">
-    <button class="msgbutton">👍️</button>
-    <button class="msgbutton">❤️</button>
-    <button class="msgbutton">😂</button>
-    <button class="msgbutton">🙏</i></button>
-    <button class="msgbutton">🥳</button>
-    <button class="msgbutton"><i class="fa fa-plus"></i></button>
-  </div>
-  <div id="12" class="msgbutton-row">
-    <button class="msgbutton"><span style="color: red;">Yes <i class="fa fa-trash-o"></i> text</span></button>
-    <button class="msgbutton">Select more</button>
-    <button class="msgbutton" onclick="clsElements()"><span style="color: green;">Cancel</span></button>
-  </div>
-  <span class="span_user_msg_sender">●○</span>
-  <span class="span_date_msg_sender" onclick="toggleDisplay('4')">Mon 22 Jan 2024 20:18:13</span>
-  </div></div>
-</section>
+    <footer>
+      <div class="text-center">
+        <h1 data-aos="zoom-in" data-aos-duration="600" id="logo"><span><img src="pageicon.png" style="width: 10%;"
+              alt=""></span>page</h1>
+        <p>A rich hyper-text instant messaging communication platform, file management system coupled with project
+          management tools for students, educators, and professionals alike.</h2>
+        </p>
+      </div>
 
-<zero-md class="bubble" id="app" no-shadow manual-render>
-  <script id="previewScript" type="text/markdown" data-dedent></script>
-  </zero-md>
-  <textarea id="textarea" ></textarea>
+      <div class="container-fluid p-4 text-white" id="copyright">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="float-left">
+              Copyright 2023, All Right Reserved, CODE CHAT (Pty) Ltd
+            </div>
+            <div class="float-right">
+              <i class="ion-social-facebook p-2"></i>
+              <i class="ion-social-googleplus p-2"></i>
+              <i class="ion-social-twitter p-2"></i>
+              <i class="ion-social-github p-2"></i>
+              <i class="ion-social-instagram p-2"></i>
+              <i class="ion-social-youtube p-2"></i>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<footer>
-  <div class="text-box">
-    <br><br><br><br>
-    <h1 class="heading-primary">
-      <span class="heading-primary-main">Github <i class="fa fa-github" style="font-size:36px"></i> Account</span>
-      <span class="heading-primary-sub">Made with ❤️ by the CODE CHAT <br>Pty Ltd team, partners, & investors</span>
-    </h1>
+    </footer>
   </div>
-</footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script id="rendered-js" src="pagelanding.js">
+  </script>
 
-<script src="chats.js"> </script>
 </body>
 
 </html>
